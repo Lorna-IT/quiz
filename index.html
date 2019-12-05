@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <li class="nav-item text-left">
+                <a href="#">View Highscores</a>
+            </li>
+            <li class="nav-item text-right">
+                Time:
+                <span id="timer">0</span>
+            </li>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="startScreen" class="text-center vertical-center show">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id="startBtn" class="btn btn-info">Start Quiz</button>
+        </div>
+
+        <!-- Game container-->
+        <div id="gameScreen" class="text-center vertical-center hide">
+            <h2 id="question" class="question-text"></h2>
+
+            <div class="choice-container">
+
+            </div>
+
+        </div> 
+        <!-- End Game Container-->
+
+    </div> <!-- End Main Container -->
+    
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
